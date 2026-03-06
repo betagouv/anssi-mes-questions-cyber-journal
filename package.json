@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "engines": {
-    "node": "23.4.0",
-    "npm": "10.9.2"
+    "node": "23.4.0"
   },
   "repository": {
     "type": "git",
@@ -15,10 +14,19 @@
   "bugs": {
     "url": "https://github.com/betagouv/anssi-mes-questions-cyber-journal/issues"
   },
+  "packageManager": "pnpm@10.24.0",
   "homepage": "https://github.com/betagouv/anssi-mes-questions-cyber-journal#readme",
+  "scripts": {
+    "preinstall": "npx only-allow@1.2.2 pnpm"
+  },
   "dependencies": {
     "dotenv": "^17.2.3",
     "knex": "^3.1.0",
     "pg": "^8.16.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "lodash": "^4.17.23"
+    }
   }
 }
