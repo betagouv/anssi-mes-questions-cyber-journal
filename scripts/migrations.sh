@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 set -e
 
-pnpm install
+npm ci
 ./node_modules/.bin/knex migrate:latest
